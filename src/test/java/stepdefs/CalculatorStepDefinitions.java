@@ -14,6 +14,7 @@ public class CalculatorStepDefinitions {
     Calculator calc;
     int result;
 
+
     @Given("I have a calculator")
     public void i_have_a_calculator() {
         calc = new Calculator();
