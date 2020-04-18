@@ -1,5 +1,7 @@
 package stepdefs;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -13,7 +15,6 @@ public class CalculatorStepDefinitions {
 
     Calculator calc;
     int result;
-
 
     @Given("I have a calculator")
     public void i_have_a_calculator() {
