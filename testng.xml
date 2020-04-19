@@ -1,14 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="Regression" verbose="1" >
-<!--    <test name="Calculator Test" >-->
-<!--        <classes>-->
-<!--            <class name="CalculatorTestRunner" />-->
-<!--        </classes>-->
-<!--    </test>-->
-    <test name="YouTube Test" >
+<suite name="Regression test - Android">
+
+    <parameter name="config" value="androidConf.json"/>
+    <parameter name="os" value="android"/>
+
+    <test name="YouTube Test">
         <classes>
-            <class name="YouTubeTestRunner" />
+            <class name="YouTubeTestRunner"/>
         </classes>
     </test>
 </suite>

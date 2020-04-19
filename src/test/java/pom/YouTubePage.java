@@ -4,16 +4,17 @@ import caps.DesiredCaps;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import org.openqa.selenium.support.PageFactory;
 
-public class YouTube extends DesiredCaps {
 
-    public YouTube(AppiumDriver<MobileElement> driver) {
+public class YouTubePage extends DesiredCaps {
+
+    public YouTubePage(AppiumDriver<MobileElement> driver){
         super(driver);
     }
 
-    public YouTube() {
-    }
-
+    //locators
     @AndroidFindBy(id = "youtube_logo")
     public MobileElement youtubeLogo;
 
@@ -21,6 +22,7 @@ public class YouTube extends DesiredCaps {
     public MobileElement video;
 
 
+    //methods
     public void tapOnVideo(MobileElement e) {
         try {
             e.click();

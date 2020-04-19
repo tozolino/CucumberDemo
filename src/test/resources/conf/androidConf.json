@@ -1,0 +1,16 @@
+{
+  "capabilities": {
+    "platformName": "Android",
+    "automationName": "UIAutomator2",
+    "noReset": true
+  },
+  "environments": {
+    "pixel2_emulator": {
+      "udid": "emulator-5554",
+      "deviceName": "Google Pixel 2",
+      "platformVersion": "10.0",
+      "appPackage": "com.google.android.youtube",
+      "appActivity": "com.google.android.apps.youtube.app.WatchWhileActivity"
+    }
+  }
+}
